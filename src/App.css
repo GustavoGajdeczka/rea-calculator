@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(43, 0, 78), rgb(0, 0, 0));
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 576px){
+  .card-body{
+    padding: 2px;
   }
-  to {
-    transform: rotate(360deg);
+  .col{
+    padding: 5px;
+  }
+  .calcCard.card{
+    width: 50%;
+    height: 60%;
+    border-radius: 5px;
+    background: rgba(206, 177, 11, 0.5);
+  }
+  button.btn{
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 576px){
+  .card-body{
+    padding: 5px;
+  }
+  .col{
+    padding: 5px;
+  }
+  .calcCard.card{
+    width: 50%;
+    height: 60%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(71, 11, 128, 0.5);
+  }
+  
+  button.btn.btn-danger{
+    font-size: 15px;
+  }
+  
+}
+@media (min-width: 768px){
+  .card-body{
+    padding: 10px;
+  }
+  .calcCard.card{
+    width: 50%;
+    height: 70%;
+    border-radius: 5px;
+    background: rgba(11, 128, 21, 0.5);
+  }
+  
+  button.btn.btn-danger{
+    font-size: 20px;
+  }
+  
+}
+@media (min-width: 992px){
+  .card-body{
+    padding: 15px;
+  }
+  .calcCard.card{
+    width: 50%;
+    height: 60%;
+    border-radius: 5px;
+    background: rgba(218, 4, 4, 0.5);
+  }
+  
+  button.btn{
+    font-size: 45px;
+  }
+
+}
+@media (min-width: 1200px){
+  .card-body{
+    padding: 20px;
+  }
+  .calcCard.card{
+    width: 50%;
+    height: 60%;
+    border-radius: 5px;
+    background: rgba(218, 4, 4, 0.5);
+  }
+  
+  button.btn{
+    font-size: 60px;
   }
 }
