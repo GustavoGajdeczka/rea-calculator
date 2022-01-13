@@ -11,6 +11,15 @@
   color: aliceblue;
 }
 
+button.btn{
+  font-size: 5px;
+  width: 100%;
+  background: linear-gradient(120deg, rgb(0, 0, 0), rgb(112, 1, 116));
+  border: purple 2px solid;
+}
+.calcCard.card{
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(71, 2, 128));
+}
 @media (max-width: 576px){
   .card-body{
     padding: 2px;
@@ -22,7 +31,6 @@
     width: 50%;
     height: 60%;
     border-radius: 5px;
-    background: rgba(206, 177, 11, 0.5);
   }
   button.btn{
     font-size: 5px;
@@ -42,11 +50,11 @@
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    background: rgba(71, 11, 128, 0.5);
   }
   
   button.btn.btn-danger{
     font-size: 15px;
+    height: 100%;
   }
   
 }
@@ -58,11 +66,11 @@
     width: 50%;
     height: 70%;
     border-radius: 5px;
-    background: rgba(11, 128, 21, 0.5);
   }
   
   button.btn.btn-danger{
     font-size: 20px;
+    height: 100%;
   }
   
 }
@@ -74,7 +82,6 @@
     width: 50%;
     height: 60%;
     border-radius: 5px;
-    background: rgba(218, 4, 4, 0.5);
   }
   
   button.btn{
@@ -90,10 +97,16 @@
     width: 50%;
     height: 60%;
     border-radius: 5px;
-    background: rgba(218, 4, 4, 0.5);
   }
   
   button.btn{
     font-size: 60px;
+    height: 100%;
   }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

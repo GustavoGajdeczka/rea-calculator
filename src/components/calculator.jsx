@@ -161,11 +161,8 @@ const Calculator = (props) => {
             <Col>
               <button onClick={() => setOperacao(".")} className="btn btn-danger ">.</button>
             </Col>
-            <Col>
+            <Col md={6} sm={6} lg={6}>
               <button onClick={() => setOperacao("=")} className="btn btn-danger ">=</button>
-            </Col>
-            <Col>
-              <button onClick={() => setOperacao("+")} className="btn btn-danger ">+</button>
             </Col>
           </Row>
 
